@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "dfx": "0.8.4",
+  "canisters": {
+    "icp_course_4": {
+      "type": "motoko",
+      "main": "src/icp_course_4/main.mo"
+    },
+    "icp_course_4_2": {
+      "type": "motoko",
+      "main": "src/icp_course_4/main.mo"
+    },
+    "icp_course_4_assets": {
+      "type": "assets",
+      "source": [
+        "src/icp_course_4_assets/assets"
+      ],
+      "dependencies": [
+        "icp_course_4"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  }
+}
